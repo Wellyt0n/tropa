@@ -14,17 +14,15 @@ const BenefitCard = ({
   icon = <Users className="h-6 w-6" />,
 }: BenefitCardProps) => {
   return (
-    <Card className="h-full bg-[#1E4007] border-0">
+    <Card className="h-full bg-[#FF6B00] border-0">
       <CardHeader>
         <div className="flex items-center gap-2">
-          <div className="rounded-full bg-[#FFD700] p-2 text-[#2B5C0F]">
-            {icon}
-          </div>
+          <div className="rounded-full bg-black p-2 text-white">{icon}</div>
           <CardTitle className="text-lg text-white">{title}</CardTitle>
         </div>
       </CardHeader>
       <CardContent>
-        <p className="text-sm text-gray-300">{description}</p>
+        <p className="text-sm text-white/90">{description}</p>
       </CardContent>
     </Card>
   );
@@ -65,7 +63,7 @@ const BenefitsFooter = ({ benefits }: BenefitsFooterProps) => {
   const displayBenefits = benefits || defaultBenefits;
 
   return (
-    <footer className="w-full bg-[#2B5C0F] py-16">
+    <footer className="w-full bg-black py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {displayBenefits.map((benefit, index) => (

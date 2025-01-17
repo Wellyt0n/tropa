@@ -9,7 +9,7 @@ const VideoPlayer = ({
   title = "Tropa do ML - Apresentação",
 }: VideoPlayerProps) => {
   return (
-    <div className="w-full max-w-[1024px] mx-auto bg-[#1E4007] rounded-lg overflow-hidden shadow-xl">
+    <div className="w-full max-w-[1024px] mx-auto bg-[#FF6B00] rounded-lg overflow-hidden shadow-xl">
       <div className="relative aspect-video bg-black">
         <div className="w-full h-full">
           <iframe
